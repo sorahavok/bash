@@ -1,0 +1,41 @@
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias vim='vi'
+alias v='vi'
+
+alias sz='source ~/.zshrc'
+alias ee='vi ~/.zsh_aliases && sz'
+alias ez='vi ~/.zshrc && sz'
+
+alias g='git'
+alias ga='g add'
+alias gc='g commit -m'
+alias gca='g commit -ammend'
+alias gs='g status'
+alias gp='g pull'
+alias gd='g diff'
+alias gch='g checkout'
+alias gb='g branch'
+
+alias p='python3'
+alias p2='python2'
+alias protobuild='p -m grpc.tools.protoc -I./protos --python_out=./proto_out --grpc_python_out=./proto_out ./protos/sensors.proto ./protos/config.proto'
+
+alias pip2=pip
+alias pip=pip3
+
+alias robomongo='/home/sora/Downloads/robomongo-0.9.0-rc10-linux-x86_64-33c89ea/bin/robomongo'
+
+alias gg='cd ~/GitHub'
+alias reader='p /home/sora/GitHub/gRpc-Hardware/Reader.py'
+alias graph='p /home/sora/GitHub/gRpc-Hardware/Graph.py'
+alias client='p /home/sora/GitHub/gRpc-Hardware/Client.py'
+alias wioserver='p /home/sora/GitHub/gRpc-Hardware/WioServer.py'
+alias frontendserver='p /home/sora/GitHub/gRpc-Hardware/FrontEndServer.py'
+alias arduinoserver='p /home/sora/GitHub/gRpc-Hardware/ArduinoServer.py'
+alias allservers='`wioserver &` && `arduinoserver &` && `frontendserver &`'
