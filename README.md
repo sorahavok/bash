@@ -1,5 +1,6 @@
 # Setup
- Run this to set up all my defaults
+ Run this to set up all my defaults:
+ 
     cd ~
     mkdir ~/GitHub
     git clone https://github.com/sorahavok/bash.git ~/GitHub
