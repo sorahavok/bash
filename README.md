@@ -1,2 +1,9 @@
-# bash
-my bash settings and aliases
+# Setup
+ Run this to set up all my defaults
+    cd ~
+    mkdir ~/GitHub
+    git clone https://github.com/sorahavok/bash.git ~/GitHub
+    sudo chmod +x ~/GitHub/bash/personal-setup.sh
+    sudo ~/GitHub/bash/personal-setup.sh
+
+
