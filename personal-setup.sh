@@ -1,4 +1,5 @@
 #!/bin/sh
+GITHUB_DIR='~/GitHub/'
 DB_TYPE=false
 GRPC_TYPE=false
 while getopts ":dg" opt; do
@@ -53,6 +54,7 @@ if [ ! -f /bin/zsh ]; then
     echo "Didn't find /bin/zsh, Installing it now" >&2
     sudo apt install zsh
     chsh -s `which zsh` # Change shell to wherever zsh was put
+    cp ~/GitHub/bash/.zsh* ~/ # moving .zshrc and alias 
     echo "Exiting old shell, up arrow will not work because history is reset"
     exec zsh -l # Kill current process and start zsh (Thanks http://unix.stackexchange.com/questions/22721/completely-restart-bash)
 fi
